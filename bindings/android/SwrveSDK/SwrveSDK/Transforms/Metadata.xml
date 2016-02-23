@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+	<!--
+  This sample removes the class: android.support.v4.content.AsyncTaskLoader.LoadTask:
+  <remove-node path="/api/package[@name='android.support.v4.content']/class[@name='AsyncTaskLoader.LoadTask']" />
+  
+  This sample removes the method: android.support.v4.content.CursorLoader.loadInBackground:
+  <remove-node path="/api/package[@name='android.support.v4.content']/class[@name='CursorLoader']/method[@name='loadInBackground']" />
+  -->
+	<attr
+		path="/api/package[@name='com.swrve.sdk.messaging']/class[@name='SwrveWidget']"
+		name="visibility">public</attr>
+	<attr
+		path="/api/package[@name='com.swrve.sdk']/class[@name='SwrveImp']"
+		name="visibility">public</attr>
+	<remove-node
+		path="/api/package[@name='com.swrve.sdk']/class[@name='SwrveBase']/method[@name='getAssetsOnDisk' and count(parameter)=0]" />
+	<remove-node
+		path="/api/package[@name='com.swrve.sdk']/class[@name='SwrveImp']/field[@name='apiKey']" />
+	<remove-node
+		path="/api/package[@name='com.swrve.sdk']/class[@name='SwrveImp']/field[@name='cacheDir']" />
+	<remove-node
+		path="/api/package[@name='com.swrve.sdk']/class[@name='SwrveImp']/field[@name='config']" />
+	<remove-node
+		path="/api/package[@name='com.swrve.sdk']/class[@name='SwrveImp']/field[@name='context']" />
+	<remove-node
+		path="/api/package[@name='com.swrve.sdk']/class[@name='SwrveImp']/field[@name='customButtonListener']" />
+	<remove-node
+		path="/api/package[@name='com.swrve.sdk']/class[@name='SwrveImp']/field[@name='dialogListener']" />
+	<remove-node
+		path="/api/package[@name='com.swrve.sdk']/class[@name='SwrveImp']/field[@name='initialisedTime']" />
+	<remove-node
+		path="/api/package[@name='com.swrve.sdk']/class[@name='SwrveImp']/field[@name='installButtonListener']" />
+	<remove-node
+		path="/api/package[@name='com.swrve.sdk']/class[@name='SwrveImp']/field[@name='language']" />
+	<remove-node
+		path="/api/package[@name='com.swrve.sdk']/class[@name='SwrveImp']/field[@name='resourceManager']" />
+	<remove-node
+		path="/api/package[@name='com.swrve.sdk']/class[@name='SwrveImp']/field[@name='userId']" />
+	<remove-node
+		path="/api/package[@name='com.swrve.sdk']/class[@name='SwrveImp']/field[@name='version']" />
+	<remove-node
+		path="/api/package[@name='com.swrve.sdk']/class[@name='SwrveBase']/method[@name='_setLanguage' and count(parameter)=1 and parameter[1][@type='java.lang.String']]" />
+	<remove-node
+		path="/api/package[@name='com.swrve.sdk.config']/class[@name='SwrveConfigBase']/method[@name='setLanguage' and count(parameter)=1 and parameter[1][@type='java.lang.String']]" />
+	<remove-node
+		path="/api/package[@name='com.swrve.sdk.conversations.ui']/class[@name='ConversationActivity']/method[@name='onCreate' and count(parameter)=1 and parameter[1][@type='android.os.Bundle']]" />
+	<attr
+		path="/api/package[@name='com.swrve.sdk.conversations.ui']/class[@name='ConversationButton']/method[@name='getModel' and count(parameter)=0]"
+		name="managedReturn">Com.Swrve.Sdk.Conversations.Engine.Model.ControlBase</attr>
+</metadata>
